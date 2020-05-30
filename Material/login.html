@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <lang html="sv"></lang>
+  <title>login</title>
+  <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+  <script language="javascript">
+    function pasuser(form) {
+      var anv = "Home"
+      var lösen = "1234"
+      var agree = "Yes"
+
+      if (form.id.value == anv) {
+        if (form.pass.value == lösen) {
+          if (form.agree.value == agree) {
+            location = "html/home.html"
+          }
+        }
+      }
+    }
+  </script>
+  <header>
+    <nav class="nav-log">
+      <a href='html/coach.html' target="_blank"><button>Coach</button></a>
+      <!--target blank hjälper att öppna sidan i en ny sidan-->
+      <a href='html/contact.html' target="_blank"><button>Contact us</button></a>
+    </nav>
+  </header>
+  <div class=background></div>
+  <div class="log-in">
+    <p>Här kan du logga in <br>
+      med ditt mejl och lösenord:</p>
+  </div>
+  <form name="login">
+    <label for="id">Användarnamn</label>
+    <input name="id" type="text" placeholder="skriv Home">
+    <label for="pass">Lösenord</label>
+    <input name="pass" type="password" placeholder="skriv 1234">
+    <label for="agree">Acceptera</label>
+    <select name="agree">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    <input type="button" value="Login" onClick="pasuser(this.form)">
+    <button onclick="alert('skicka ditt mejl att få nytt lösenord');">Forgot password??</button>
+    <label for="email">Email</label>
+    <input name="pass" type="password" placeholder="skriv ">
+    <button onclick="alert('ditt mejl är skickad nu');">Send</button>
+  </form>
+  <br>
+  <!--ett formulär till dem som vill registera sig själva och blir medlem-->
+  <div class="konto">
+    <p>Om du inte har ett konto, <br>
+      du kan registera dig här:</p>
+  </div>
+  <br>
+  <br>
+  <div class="register">
+    <form action="" name="login">
+
+      <label for="mail">Välj ett mejl</label>
+      <input name="mail" type="text" placeholder="your mail">
+      <label for="pass">Välj lösenord</label>
+      <input name="pass" type="password" placeholder="password">
+      <button onclick="alert('nu är du registerad');"> register me</button>     <!--alert (javascript), när man klickar på knäppen 
+                                                                                      register me, det kommer ett alert som sägs: du är registerad nu!-->
+
+    </form>
+  </div>
+
+</body>
+
+</html>

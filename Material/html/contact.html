@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Fitness.com</title>
+  <link rel="icon" href="../img/icon.png" type="image/png">
+  <link rel="stylesheet" href="../css/contact.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- till navigation det är bättre att använda <nav> så jag tar nav -->
+      <a href='coach.html' target="_blank"><button>Coach</button></a>
+      <!--target blank hjälper att öppna sidan i en ny sidan-->
+      <a href='contact.html' target="_blank"><button>Contact us</button></a>
+    </nav>
+  </header>
+  <div>
+    <a href="home.html">
+      <img src="../img/icon.png" id="logga">
+    </a>
+  </div>
+
+
+  <br>
+
+  <div id="formulär">
+    <img src="../img/icon.png" id=formicon>
+    <form action="" class="" method="post">
+      <!--form action, you can use your email to send data to your email-->
+      <label for="fname">Firstname</label>
+      <br>
+      <input type="text" name="fname">
+      <br>
+      <label for="lname">Lastname</label>
+      <br>
+      <input type="text" name="lname">
+      <br>
+      <label for="mail">Email</label>
+      <br>
+      <input type="email" name="mail">
+      <br>
+      <label for="mess">Message</label>
+      <br>
+      <textarea name="mess" rows="8" cols="25"></textarea>
+      <button class="submit">submit/send</button>
+      <!--när har formulär ska man också ha ett knäpp att skicka in -->
+
+    </form>
+  </div>
+  <br>
+  <!--Man använder footer för att visa email address, contact number, post address och så vidare. Om du vill visa dem då bättre
+att du använder <footer> -->
+  <footer>
+    <div id="contactwrapper">
+      <div id="item">
+        <h1>Contact us: </h1>
+        <p>Address:Sweden .... <br>Email:coach@blabala.com</p>
+       <p>@copyWrite</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

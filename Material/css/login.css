@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+form {
+  width: 100px;
+  top: 25%;
+  left: 25%;
+  position: absolute;
+}
+label {
+  color: white;
+}
+.background {
+  height: 100%;
+  background-image: url(../img/bgk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* från linje 28 till 55 är nya! för att ha två formulär, ett för logga in och ett för registera nytt konto*/
+.register{
+  
+  position: absolute;
+  top: 25%;
+  left: 55%;
+}
+.konto{
+  position: absolute;
+  top: 13%;
+  left: 55%;
+  color: white;
+  background-color: brown;
+}
+.log-in{
+  position: absolute;
+  top: 13%;
+  left: 25%;
+  color: white;
+  background-color: brown;
+}
+
+button{
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  margin: 5px;
+}
+
+.nav-log{
+  background-color: lightblue;
+}
